@@ -148,11 +148,11 @@ export function CryptocurrenciesSection() {
         
         <div className="max-w-5xl mx-auto">
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="grid grid-cols-4 w-full mb-8">
-              <TabsTrigger value="all">All</TabsTrigger>
-              <TabsTrigger value="popular">Popular</TabsTrigger>
-              <TabsTrigger value="stablecoin">Stablecoins</TabsTrigger>
-              <TabsTrigger value="altcoin">Altcoins</TabsTrigger>
+            <TabsList className="grid grid-cols-4 w-full mb-8 bg-muted/50 dark:bg-muted/20 border border-border">
+              <TabsTrigger value="all" className="font-medium">All</TabsTrigger>
+              <TabsTrigger value="popular" className="font-medium">Popular</TabsTrigger>
+              <TabsTrigger value="stablecoin" className="font-medium">Stablecoins</TabsTrigger>
+              <TabsTrigger value="altcoin" className="font-medium">Altcoins</TabsTrigger>
             </TabsList>
             
             <TabsContent value="all" className="animate-fade-in">

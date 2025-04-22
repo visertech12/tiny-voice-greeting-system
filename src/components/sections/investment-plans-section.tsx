@@ -181,11 +181,11 @@ export function InvestmentPlansSection() {
         
         <div className="flex justify-center mb-8">
           <Tabs defaultValue="all" value={planDuration} onValueChange={setPlanDuration} className="w-full max-w-md">
-            <TabsList className="grid grid-cols-4 w-full">
-              <TabsTrigger value="all">All</TabsTrigger>
-              <TabsTrigger value="short">Short-term</TabsTrigger>
-              <TabsTrigger value="medium">Medium</TabsTrigger>
-              <TabsTrigger value="long">Long-term</TabsTrigger>
+            <TabsList className="grid grid-cols-4 w-full bg-muted/50 dark:bg-muted/20 border border-border">
+              <TabsTrigger value="all" className="font-medium">All</TabsTrigger>
+              <TabsTrigger value="short" className="font-medium">Short-term</TabsTrigger>
+              <TabsTrigger value="medium" className="font-medium">Medium</TabsTrigger>
+              <TabsTrigger value="long" className="font-medium">Long-term</TabsTrigger>
             </TabsList>
           </Tabs>
         </div>
