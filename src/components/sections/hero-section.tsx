@@ -50,6 +50,16 @@ export function HeroSection() {
             </div>
           </div>
           
+          <div className="hidden lg:block relative">
+            <img 
+              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              alt="Woman using laptop" 
+              className="w-full h-auto rounded-lg shadow-lg animate-fade-in"
+              style={{animationDelay: '0.6s'}}
+            />
+            <div className="absolute inset-0 bg-primary/10 rounded-lg"></div>
+          </div>
+          
           <div className="glass-card p-6 md:p-8 animate-fade-in" style={{animationDelay: '0.6s'}}>
             <h3 className="text-xl font-semibold mb-4">Investment Calculator</h3>
             <div className="space-y-6">
