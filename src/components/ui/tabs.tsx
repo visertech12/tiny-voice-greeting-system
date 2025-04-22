@@ -17,6 +17,7 @@ const TabsList = React.forwardRef<
       "dark:bg-muted/20",
       "blue:bg-blue-100/70 blue:text-blue-900",
       "green:bg-green-100/70 green:text-green-900",
+      "wealth:bg-blue-50/90 wealth:text-blue-900",
       className
     )}
     {...props}
@@ -36,6 +37,7 @@ const TabsTrigger = React.forwardRef<
       "dark:data-[state=active]:bg-muted/80",
       "blue:data-[state=active]:bg-blue-500 blue:data-[state=active]:text-white blue:hover:bg-blue-200/70",
       "green:data-[state=active]:bg-green-500 green:data-[state=active]:text-white green:hover:bg-green-200/70",
+      "wealth:data-[state=active]:bg-blue-600 wealth:data-[state=active]:text-white wealth:hover:bg-blue-100/70",
       className
     )}
     {...props}

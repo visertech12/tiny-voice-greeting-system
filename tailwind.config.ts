@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,7 +62,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-                // Custom colors for HYIP theme
                 wealth: {
                     50: '#f0f9ff',
                     100: '#e0f2fe',
@@ -195,6 +193,7 @@ export default {
 		function({ addVariant }) {
 			addVariant('green', '&.green, .green &');
 			addVariant('blue', '&.blue, .blue &');
+			addVariant('wealth', '&.wealth, .wealth &');
 		}
 	],
 } satisfies Config;
