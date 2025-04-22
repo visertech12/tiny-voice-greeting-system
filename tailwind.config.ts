@@ -190,5 +190,11 @@ export default {
             }
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		function({ addVariant }) {
+			addVariant('green', '&.green, .green &');
+			addVariant('blue', '&.blue, .blue &');
+		}
+	],
 } satisfies Config;
