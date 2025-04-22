@@ -15,9 +15,9 @@ const TabsList = React.forwardRef<
     className={cn(
       "inline-flex h-10 items-center justify-center rounded-md bg-muted/50 p-1 text-muted-foreground",
       "dark:bg-muted/20",
-      "blue:bg-blue-100/70 blue:text-blue-900",
-      "green:bg-green-100/70 green:text-green-900",
-      "wealth:bg-blue-50/90 wealth:text-blue-900",
+      "blue:bg-blue-100/70 blue:text-blue-900 blue:border blue:border-blue-200",
+      "green:bg-green-100/70 green:text-green-900 green:border green:border-green-200",
+      "wealth:bg-blue-50/90 wealth:text-blue-900 wealth:border wealth:border-blue-200",
       className
     )}
     {...props}
