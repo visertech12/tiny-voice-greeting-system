@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -185,6 +186,7 @@ export default {
                 'card-gradient': 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01))',
                 'crypto-gradient': 'linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)',
                 'wealth-gradient': 'linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%)',
+                'dashboard-pattern': 'radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.05) 0%, transparent 50%), radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.05) 0%, transparent 50%)',
             }
 		}
 	},
@@ -194,6 +196,7 @@ export default {
 			addVariant('green', '&.green, .green &');
 			addVariant('blue', '&.blue, .blue &');
 			addVariant('wealth', '&.wealth, .wealth &');
+			addVariant('crypto', '&.crypto, .crypto &');
 		}
 	],
 } satisfies Config;
