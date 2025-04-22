@@ -48,7 +48,7 @@ interface CyberSidebarProps {
 interface NavigationItem {
   id: string;
   label: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: React.ComponentType<{ className?: string; size?: number }>;
   notification?: number | boolean;
 }
 
@@ -127,7 +127,7 @@ export function CyberSidebar({ activeSection, setActiveSection }: CyberSidebarPr
             "text-white/70 hover:text-white transition-all duration-200"
           )}
         >
-          <PanelLeft size={16} className="transition-transform duration-300" />
+          <PanelLeft className="transition-transform duration-300 w-4 h-4" />
         </SidebarTrigger>
       </SidebarHeader>
 
@@ -167,9 +167,8 @@ export function CyberSidebar({ activeSection, setActiveSection }: CyberSidebarPr
                       : "text-white/60 group-hover:text-white/90"
                   )}>
                     <item.icon 
-                      size={20} 
                       className={cn(
-                        "transition-all duration-300",
+                        "w-5 h-5 transition-all duration-300",
                         activeSection === item.id && "filter drop-shadow-[0_0_3px_rgba(162,89,255,0.7)]"
                       )} 
                     />
@@ -228,7 +227,7 @@ export function CyberSidebar({ activeSection, setActiveSection }: CyberSidebarPr
                   "text-white/70 hover:text-white/90"
                 )}
               >
-                <LogOut size={20} className="text-[#ff5555]/80 group-hover:text-[#ff5555] transition-all duration-300" />
+                <LogOut className="w-5 h-5 text-[#ff5555]/80 group-hover:text-[#ff5555] transition-all duration-300" />
                 <span className="ml-2">Logout</span>
                 
                 {/* Hover background animation effect */}
@@ -266,11 +265,11 @@ export function CyberSidebar({ activeSection, setActiveSection }: CyberSidebarPr
             )}>
               {isDarkMode ? (
                 <div className="flex items-center gap-1">
-                  <Moon size={12} /> Dark
+                  <Moon className="w-3 h-3" /> Dark
                 </div>
               ) : (
                 <div className="flex items-center gap-1">
-                  <Sun size={12} /> Light
+                  <Sun className="w-3 h-3" /> Light
                 </div>
               )}
             </span>
@@ -285,7 +284,7 @@ export function CyberSidebar({ activeSection, setActiveSection }: CyberSidebarPr
                   "text-xs text-white/60 hover:text-white/90",
                   "transition-colors duration-200"
                 )}>
-                  <Globe size={14} />
+                  <Globe className="w-3.5 h-3.5" />
                   <span className={cn(
                     isCollapsed ? "opacity-0 w-0" : "opacity-100 w-auto",
                     "transition-all duration-300 overflow-hidden"
