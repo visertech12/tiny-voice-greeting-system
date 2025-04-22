@@ -45,10 +45,11 @@ interface CyberSidebarProps {
   setActiveSection: (section: string) => void;
 }
 
+// Updated the interface to use LucideProps or a more general type that doesn't restrict size
 interface NavigationItem {
   id: string;
   label: string;
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   notification?: number | boolean;
 }
 
