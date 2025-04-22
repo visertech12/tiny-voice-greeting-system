@@ -17,7 +17,10 @@ export default function Dashboard() {
 
   return (
     <>
-      <Helmet title="Dashboard | CryptoWealth" description="Manage your investments and monitor your portfolio growth" />
+      <Helmet 
+        title="Dashboard | CryptoWealth" 
+        description="Manage your investments and monitor your portfolio growth" 
+      />
       <PageLayout>
         <div className="flex flex-col lg:flex-row min-h-[calc(100vh-64px)]">
           <DashboardSidebar activeSection={activeSection} setActiveSection={setActiveSection} />

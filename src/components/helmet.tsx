@@ -1,4 +1,16 @@
 
 import { Helmet as ReactHelmet } from "react-helmet";
 
-export const Helmet = ReactHelmet;
+interface HelmetProps {
+  title: string;
+  description?: string;
+}
+
+export function Helmet({ title, description }: HelmetProps) {
+  return (
+    <ReactHelmet>
+      <title>{title}</title>
+      {description && <meta name="description" content={description} />}
+    </ReactHelmet>
+  );
+}
