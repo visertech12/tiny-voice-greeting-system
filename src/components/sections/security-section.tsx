@@ -9,13 +9,13 @@ interface SecurityFeatureProps {
 
 function SecurityFeature({ icon, title, description }: SecurityFeatureProps) {
   return (
-    <div className="flex items-start gap-4">
-      <div className="w-12 h-12 rounded-lg bg-muted/50 flex items-center justify-center text-primary/80 shrink-0">
+    <div className="flex items-start gap-4 p-5 bg-card border border-border rounded-xl transition-all duration-300 hover:shadow-md">
+      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
         {icon}
       </div>
       <div>
-        <h3 className="font-medium mb-1">{title}</h3>
-        <p className="text-muted-foreground text-sm">{description}</p>
+        <h3 className="font-medium text-lg mb-2">{title}</h3>
+        <p className="text-muted-foreground">{description}</p>
       </div>
     </div>
   );
@@ -56,7 +56,7 @@ export function SecuritySection() {
   ];
 
   return (
-    <section id="security" className="py-20 bg-muted dark:bg-muted/30">
+    <section id="security" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Security Highlights</h2>
@@ -65,7 +65,7 @@ export function SecuritySection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {securityFeatures.map((feature, index) => (
             <SecurityFeature
               key={index}
@@ -77,25 +77,31 @@ export function SecuritySection() {
         </div>
         
         <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
-          <div className="flex items-center gap-2 p-3 bg-background rounded-lg border border-border">
-            <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/ssl-certificate.png" alt="SSL Secured" className="w-8 h-8" />
-            <div className="text-sm">
+          <div className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+              <img src="https://cdn-icons-png.flaticon.com/512/2150/2150463.png" alt="SSL Secured" className="w-6 h-6" />
+            </div>
+            <div>
               <div className="font-medium">SSL Secured</div>
               <div className="text-muted-foreground text-xs">256-bit encryption</div>
             </div>
           </div>
           
-          <div className="flex items-center gap-2 p-3 bg-background rounded-lg border border-border">
-            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/mcafee_logo_icon_169706.png" alt="McAfee Secure" className="w-8 h-8" />
-            <div className="text-sm">
+          <div className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <img src="https://cdn-icons-png.flaticon.com/512/882/882730.png" alt="McAfee Secure" className="w-6 h-6" />
+            </div>
+            <div>
               <div className="font-medium">McAfee Secure</div>
               <div className="text-muted-foreground text-xs">Site verified</div>
             </div>
           </div>
           
-          <div className="flex items-center gap-2 p-3 bg-background rounded-lg border border-border">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/norton-antivirus-569592.png" alt="Norton Secured" className="w-8 h-8" />
-            <div className="text-sm">
+          <div className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center">
+              <img src="https://cdn-icons-png.flaticon.com/512/2592/2592004.png" alt="Norton Secured" className="w-6 h-6" />
+            </div>
+            <div>
               <div className="font-medium">Norton Secured</div>
               <div className="text-muted-foreground text-xs">Data protection</div>
             </div>
