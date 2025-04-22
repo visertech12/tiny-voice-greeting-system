@@ -87,6 +87,15 @@ export default {
                     800: '#5b21b6',
                     900: '#4c1d95',
                 },
+                // New cyberpunk color palette
+                cyber: {
+                    blue: '#00d1ff',
+                    purple: '#a259ff',
+                    green: '#00ff9d',
+                    red: '#ff5555',
+                    dark: '#0f111a',
+                    light: '#f1f1f1',
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -165,6 +174,22 @@ export default {
                     '50%': {
                         boxShadow: '0 0 16px 4px rgba(139, 92, 246, 0.5)'
                     }
+                },
+                'gradient-x': {
+                    '0%, 100%': {
+                        'background-position': '0% 50%'
+                    },
+                    '50%': {
+                        'background-position': '100% 50%'
+                    }
+                },
+                'shimmer': {
+                    '0%': {
+                        'background-position': '-1000% 0'
+                    },
+                    '100%': {
+                        'background-position': '1000% 0'
+                    }
                 }
 			},
 			animation: {
@@ -175,7 +200,9 @@ export default {
                 'slide-in-left': 'slide-in-left 0.5s ease-out',
                 'scale-in': 'scale-in 0.3s ease-out',
                 'float': 'float 3s ease-in-out infinite',
-                'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
+                'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                'gradient-x': 'gradient-x 3s ease infinite',
+                'shimmer': 'shimmer 2s linear infinite'
 			},
             fontFamily: {
                 'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -187,6 +214,8 @@ export default {
                 'crypto-gradient': 'linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)',
                 'wealth-gradient': 'linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%)',
                 'dashboard-pattern': 'radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.05) 0%, transparent 50%), radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.05) 0%, transparent 50%)',
+                'cyber-glow': 'linear-gradient(to right, #a259ff, #00d1ff)',
+                'neon-border': 'linear-gradient(90deg, #a259ff, #00d1ff, #a259ff)'
             }
 		}
 	},
